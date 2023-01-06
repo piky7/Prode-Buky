@@ -1,0 +1,367 @@
+:root{
+    --negro: #222;
+    --naranja: #FF4500;
+    --amarillo: #DAA520;
+    --negro-trasnparente: rgba(34, 34, 34, 0.85);
+    --naranja-transparente: rgba(255, 81, 0, 0.85);
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--negro);
+    color: aliceblue;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#titulo{
+    text-align: center;
+    color: aliceblue;
+    background-color: var(--naranja);
+}
+#titulo1{
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    border-radius: .3rem;
+    background-color:var(--naranja-transparente);
+    color: var(--negro);
+}
+
+#titulo2{
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    border-radius: .3rem;
+    background-color: var(--naranja);
+    color: var(--negro);
+}
+.campeon{
+    text-align: center;
+padding: .5%;
+
+}
+.campeones{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+.campeones img{
+width: 325px;
+height: 350px;
+border-radius: .5rem;
+border: double;
+}
+
+.campeones figcaption{
+    background-color: #222;
+color: azure;
+padding: 1rem;
+}
+
+.campeones button{
+    min-width: 130px;
+    height: 40px;
+color: #fff;
+padding: 5px 10px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+border-radius: 5px;
+border: none;
+background-size: 120% auto;
+background-image: linear-gradient(315deg, #0b1300 0%, #f78d03 75%);
+top: 2px;
+background-position: right center;
+box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.cataCup button{
+min-width: 130px;
+height: 40px;
+color: #fff;
+padding: 5px 10px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+border-radius: 5px;
+border: none;
+background-size: 120% auto;
+background-image: linear-gradient(315deg, #07010a 0%, #dc2430 75%);
+top: 2px;
+background-position: right center;
+box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+#cata{
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    border-radius: .3rem;
+    background-color: #dc2430;
+    color: aliceblue;
+}
+
+.cataCup{
+    width: 80%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.cataCup figcaption{
+    background-color: #222;
+color: azure;
+padding: 1rem;
+
+}
+
+
+
+.cataCup img{
+width: 200px;
+height: 200px;
+border-radius: .5rem;
+border: double;
+}
+
+.campeoncata{
+    text-align: center;
+    padding: 0.2%;
+    width: 40%;
+}
+
+#birrera{
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    border-radius: .3rem;
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.copaBirrera img{
+    width: 200px;
+height: 200px;
+border-radius: .5rem;
+border: double;
+}
+
+.copaBirrera{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.copaBirrera figcaption{
+    background-color: #222;
+    color: azure;
+    padding: 1rem;
+    
+}
+
+.copaBirrera button{
+min-width: 130px;
+height: 40px;
+color: rgb(0, 0, 0);
+padding: 5px 10px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+border-radius: 5px;
+border: none;
+background-size: 120% auto;
+background-image: linear-gradient(315deg, #07010a 0%, #fbff00 75%);
+top: 2px;
+background-position: right center;
+box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.btn-scroll{
+    position: fixed;
+    z-index: 999;
+    bottom: 15;
+    right:100;
+    background-color: var(--naranja);
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btn-scroll:hover{
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel-btn:hover{
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 15;
+    right: 15;
+    background-color: var(--naranja);
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    background-color:var(--naranja-transparente) ;
+    transform: translate(0,-100%);
+    transition: transform 0.3s ease;
+    
+}
+
+.mostrar{
+    transform: translate(0,0);
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 4rem;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 2rem;
+    font-style: inherit;
+    width:fit-content;
+    font-size: 1.5rem;
+    color:black;
+    display: inline-block
+    
+    
+}
+
+.menu a:hover{
+    background-color: var(--negro);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#espacio{
+    
+    display: grid;
+    place-items: center;  
+}
+
+#subTitulo {
+    display: block;
+}
+
+
+#logo{
+    float:left;
+    width: 200px;
+    height: 200px;
+}
+
+#participantes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo figcaption{
+    background-color: var(--amarillo);
+    text-align: center;
+    color: #222;
+}
+
+.buscador{
+background-color:antiquewhite;
+}
+
+.ocultar{
+    display: none;
+}
+
+#sorteo-btn{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg, #07010a 0%, #fbff00 75%);
+    top: 2px;
+    background-position: right center;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    align-items: center;
+}
+
+.menu-btn{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+#ganadores{
+    display: flex;
+    flex-wrap: wrap;
+}
