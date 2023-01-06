@@ -46,12 +46,63 @@ body{
     background-color: var(--naranja);
     color: var(--negro);
 }
+
+#container{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    height: 65%;
+}
+
+#container a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: thin solid black;
+    text-decoration: none;
+    background-color: var(--naranja);
+    color: #0b1300;
+    transition: all0.3s ease;
+}
+#container a:hover {
+    color: #4d4d4d;
+  }
+
+.carrusel-btn{
+    position: absolute;
+    width: 100%;
+    top: calc(50% - 2rem);
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    font-weight: bold;
+}
 .campeon{
     text-align: center;
-padding: .5%;
-
+    padding: .5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
 }
+
+.campeon.active{
+    opacity: 1;
+    visibility: visible;
+}
+  
+
 .campeones{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -135,17 +186,52 @@ padding: 1rem;
 
 
 .cataCup img{
-width: 200px;
-height: 200px;
+width: 325px;
+height: 350px;
 border-radius: .5rem;
 border: double;
 }
 
 .campeoncata{
     text-align: center;
-    padding: 0.2%;
-    width: 40%;
+    padding: .5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
 }
+
+.campeoncata.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+#container2{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    height: 65%;
+}
+
+#container2 a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: thin solid black;
+    text-decoration: none;
+    background-color: #dc2430;
+    color: #0b1300;
+    transition: all0.3s ease;
+}
+#container2 a:hover {
+    color: #4d4d4d;
+  }
 
 #birrera{
     display: grid;
@@ -156,12 +242,7 @@ border: double;
     color: var(--negro);
 }
 
-.copaBirrera img{
-    width: 200px;
-height: 200px;
-border-radius: .5rem;
-border: double;
-}
+
 
 .copaBirrera{
     width: 100%;
@@ -364,4 +445,52 @@ background-color:antiquewhite;
 #ganadores{
     display: flex;
     flex-wrap: wrap;
+}
+
+#container3{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    height: 65%;
+}
+
+#container3 a{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: thin solid black;
+    text-decoration: none;
+    background-color: var(--naranja);
+    color: #0b1300;
+    transition: all0.3s ease;
+}
+#container3 a:hover {
+    color: #4d4d4d;
+  }
+
+  .campeonbirrera{
+    text-align: center;
+    padding: .5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+
+.campeonbirrera img{
+    width: 325px;
+    height: 350px;
+    border-radius: .5rem;
+    border: double;
+}
+
+.campeonbirrera.active{
+    opacity: 1;
+    visibility: visible;
 }

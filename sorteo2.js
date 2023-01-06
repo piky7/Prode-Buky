@@ -32,7 +32,4 @@ d.addEventListener('click',e=>{
       alert(resultado)
     }
 })
-
-
-
 }
