@@ -12,6 +12,7 @@ const $birreraTitulo = document.getElementById('birrera')
 const $campeonesBirrera = document.querySelector('.copabirrera')
 const $logo = document.querySelector('img')
 const $botonAdriana = document.getElementById('adrianap')
+const $botonFran = document.getElementById('franp')
 const $botonHoracio = document.getElementById('horaciop')
 const $botonAldo = document.getElementById('aldop')
 const $botonAldo2 = document.getElementById('aldop2')
@@ -39,6 +40,7 @@ document.addEventListener('click',(e)=>{
     if(e.target == $botonAldo){alert(`Aldo ganó el prode con 208 pts en 325 partidos prosticados, con un promedio de 0,640 pts por partido`)}
     if(e.target == $botonAldo2){alert(`Aldo ganó el prode con 164 pts en 203 partidos prosticados, con un promedio de 0,807 pts por partido`)}
     if(e.target == $botonFaustino){alert(`Faustino ganó el prode con 279 pts en 378 partidos prosticados, con un promedio de 0,738 pts por partido`)}
+    if(e.target == $botonFran){alert(`Francisco ganó el prode con 60 pts en 64 partidos prosticados, con un promedio de 0,937 pts por partido`)}
     if(e.target == $botonFernandoCP){alert('Fernando Petrillo le ganó la final de la Cata Cup a Horacio M')}
     if(e.target == $botonHoracioCP){alert('Horacio M le ganó la final de la Cata Cup a Aldo Y')}
     if(e.target == $botonFaustinoCP){alert('Faustino M le ganó la final de la Cata Cup a Agustin M')}

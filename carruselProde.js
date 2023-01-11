@@ -45,7 +45,7 @@ export function carrusel (){
             e.preventDefault()
             $campeonesC[i].classList.remove('active')
             i++;
-            if(i>=$campeonesC.length-1){
+            if(i>=$campeonesC.length){
                 i = 0
             }
             $campeonesC[i].classList.add('active')

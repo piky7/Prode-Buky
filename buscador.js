@@ -5,10 +5,13 @@ export function buscar (input,selector) {
       
         if(e.target.matches(input)){
             d.querySelectorAll(selector).forEach(el=>{
-                el.textContent.toLowerCase().includes(e.target.value)
-                ? el.classList.remove('ocultar')
-                : el.classList.add('ocultar')
-            })
+               if(el.textContent.toLowerCase().includes(e.target.value) ||  el.textContent.toUpperCase().includes(e.target.value) ||  el.textContent.includes(e.target.value)){
+                   el.classList.remove('ocultar')
+               } else {
+                   el.classList.add('ocultar')
+               }
+            }) 
+            
         }
     })
 }
